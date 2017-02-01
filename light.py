@@ -34,28 +34,35 @@ def S_callback(sdata):
  #0-7
  state = sdata.l
 
-
+ #blue
  if state == 0:
    led_light(0,100,0)
 
-# elif state == 1:
-#   led_light(50,50,50)
+ #purple
+ elif state == 1:
+   led_light(50,100,0)
 
-# elif state == 2:
-#   led_light(0,50,50)
-
-# elif state == 3:
-#   led_light(70,50,50)
-
-# elif state == 4:
-#   led_light(50,0,50)
-
-# elif state == 5:
-#   led_light(0,50,50)
+ #light blue
+ elif state == 2:
+   led_light(0,100,100)
  
+ #green
+ elif state == 3:
+   led_light(0,0,100)
+
+ #yellow
+ elif state == 4:
+   led_light(100,0,100)
+
+ #orange
+ elif state == 5:
+   led_light(100,0,50)
+ 
+ #pink
  elif state == 6:
    led_light(100,100,0)
-
+ 
+ #red
  elif state == 7:
    led_light(100,0,0)
  
